@@ -49,12 +49,23 @@ public class PlatformerMovement : MonoBehaviour
     void Update()
     {
         velocity = TranslateInputToVelocity(moveInput);
+
+        if (velocity.x > 0)
+        {
+            animator.SetBool("Run", true);
+        }
+        else
+        {
+            animator.SetBool("Run", false);
+        }
+        
         
         // Apply jump-input:
         if (jumpInput && wasGrounded)
         {
             velocity.y = jumpForce;
             jumpInput = false;
+            
         }
         
         // Check if character lost contact with ground this frame
@@ -168,12 +179,14 @@ public class PlatformerMovement : MonoBehaviour
             Debug.Log("Jump!");
             jumpInput = true;
             jumpReleased = false;
+            animator.SetBool("Jump", true);
         }
 
         if (context.canceled && controlEnabled)
         {
             jumpReleased = true;
             jumpInput = false;
+            animator.SetBool("Jump", false);
         }
     }
 }
