@@ -3140,9 +3140,25 @@ PrefabInstance:
       value: 0.6886792
       objectReference: {fileID: 0}
     - target: {fileID: 7296237503098425364, guid: 4a943c01ac91464408ec9acdc3c4957e, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296237503098425364, guid: 4a943c01ac91464408ec9acdc3c4957e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296237503098425364, guid: 4a943c01ac91464408ec9acdc3c4957e, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296237503098425364, guid: 4a943c01ac91464408ec9acdc3c4957e, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296237503098425364, guid: 4a943c01ac91464408ec9acdc3c4957e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: ec6f3e9bb0979ce43869b0154aa60887, type: 2}
+      objectReference: {fileID: 2100000, guid: 3ceafe3175293c044b98f0df61d6aee6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
